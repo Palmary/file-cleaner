@@ -18,7 +18,23 @@ and safely quarantining approved files.
 - Dry-run mode by default.
 - Optional PHP 8 web UI with configurator and JSON API for integration.
 
+## Web UI
+
+A PHP 8 web interface with a dashboard, visual configurator, report browser,
+and JSON API is available in the `web/` directory.
+
+👉 See [web/README.md](web/README.md) for the web version setup and API documentation.
+
 ## Installation
+
+### Prebuilt binaries
+
+Prebuilt binaries for macOS (Intel and Apple Silicon), Windows, and Linux are
+available from the [GitHub Releases](https://github.com/Palmary/file-cleaner/releases)
+page. Download the archive for your platform, extract it, and run the `file-cleaner`
+binary.
+
+### Build from source
 
 Requires [Rust](https://rustup.rs/) 1.80+.
 

@@ -1,0 +1,10 @@
+/target
+/reports
+/quarantine
+/example
+*.DS_Store
+
+# Web UI local overrides and runtime files
+/web/config.local.php
+/web/vendor/
+/web/reports/

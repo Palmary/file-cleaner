@@ -1,0 +1,32 @@
+# File Cleaner Web UI - Apache configuration
+#
+# IMPORTANT: This directory can execute shell commands. Do not expose it to the
+# public internet without authentication.
+#
+# Recommended protections:
+# 1. Enable Basic Auth or integrate with your application's authentication.
+# 2. Restrict access by IP address.
+# 3. Place this directory behind a reverse proxy or VPN.
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Optional: force HTTPS
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+# Deny direct access to includes and templates.
+<IfModule mod_authz_core.c>
+    Require all granted
+</IfModule>
+
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Allow from all
+</IfModule>
+
+<IfModule mod_php.c>
+    php_flag display_errors off
+    php_value upload_max_filesize 10M
+    php_value post_max_size 10M
+</IfModule>

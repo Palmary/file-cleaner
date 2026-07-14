@@ -1,0 +1,48 @@
+{
+    "source_roots": [
+        "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/example/site"
+    ],
+    "media_roots": [
+        "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/example/site/uploads",
+        "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/example/site/section-a/uploads",
+        "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/example/site/section-b/uploads",
+        "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/example/site/others",
+        "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/example/site/js"
+    ],
+    "origins": [
+        {
+            "origin": "https://example.com/",
+            "local_root": "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/example/site"
+        }
+    ],
+    "prefix_maps": [
+        {
+            "prefix": "/section-a/",
+            "local_root": "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/example/site/section-a"
+        },
+        {
+            "prefix": "/section-b/",
+            "local_root": "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/example/site/section-b"
+        }
+    ],
+    "exclude_patterns": [
+        "**/node_modules/**",
+        "**/.git/**",
+        "**/quarantine/**",
+        "**/reports/**",
+        "**/common/**"
+    ],
+    "include_patterns": [],
+    "protected_patterns": [],
+    "report_dir": "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/reports",
+    "quarantine_dir": "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/quarantine",
+    "scan_config_path": "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/web/config.json",
+    "scan_report_format": "html",
+    "scan_dry_run": false,
+    "display_timezone": "Asia/Hong_Kong",
+    "default_web_root": "/Users/ahpang/Documents/Repository/palmary_dev/code/file-cleaner/example/site",
+    "root_relative_base": "/",
+    "display_language": "en",
+    "media_roots_as_disposable": false,
+    "remove_empty_folders_on_apply": false
+}

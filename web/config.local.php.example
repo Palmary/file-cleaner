@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * Example local override for the web UI.
+ * Copy this file to config.local.php and customize.
+ */
+
+return [
+    // 'app_name' => 'My File Cleaner',
+    // 'binary_path' => __DIR__ . '/../target/release/file-cleaner',
+    // 'default_config_path' => __DIR__ . '/../config.json',
+    // 'api_key' => 'change-me-to-a-long-random-string',
+    // 'auth' => [
+    //     'username' => 'admin',
+    //     'password' => password_hash('secret', PASSWORD_DEFAULT),
+    // ],
+    // 'timezone' => 'Asia/Hong_Kong',
+];
